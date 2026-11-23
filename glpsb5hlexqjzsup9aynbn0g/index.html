@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="refresh" content="300">
+<title>Planning</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:16px;font-family:"Segoe UI",Verdana,Arial,sans-serif;font-size:20px;line-height:1.35;color:#111;background:#fff}
+h1{font-size:30px;margin:0 0 12px}
+h2{font-size:26px;margin:28px 0 10px;padding-bottom:4px;border-bottom:3px solid #111}
+.legende{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 8px;padding:0;list-style:none}
+.legende li{padding:6px 14px;border-radius:8px;border:2px solid;font-weight:700}
+.alerte{display:none;margin:0 0 14px;padding:14px 18px;background:#fff3cd;color:#4a3000;border:4px solid #b45309;border-radius:10px;font-weight:700;font-size:22px}
+.grille{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.jour{border:2px solid #555;border-radius:10px;padding:8px;background:#fff;min-height:120px}
+.jour h3{font-size:20px;margin:0 0 8px;font-weight:700}
+.auj{display:none;font-size:18px;background:#111;color:#fff;border-radius:6px;padding:1px 8px;margin-left:4px;white-space:nowrap}
+.jour.aujourdhui{border:6px solid #111;padding:4px;background:#fffbe6}
+.jour.aujourdhui .auj{display:inline-block}
+.jour.passe{opacity:.72}
+.rien{color:#333;font-style:italic}
+.ev{border:2px solid;border-radius:8px;padding:6px 8px;margin:0 0 6px;overflow-wrap:anywhere}
+.ev b{display:block}
+.ev .h{display:block;font-size:22px;font-weight:700}
+.c-foyer{background:#d6e6ff;border-color:#1e4fa3;color:#0a2a5e}
+.c-soin{background:#d5f0d9;border-color:#1c6b2f;color:#0b3a17}
+.c-geo{background:#f1dcb0;border-color:#8a5a0b;color:#4a2f00}
+.c-absent{background:#c9ccd1;border-color:#3b4350;color:#14181f}
+.c-occupe{background:#f1f2f4;border-color:#6b7280;color:#14181f;border-style:dashed}
+.pied{margin-top:26px;padding-top:10px;border-top:2px solid #999;font-size:20px}
+@media (max-width:900px){.grille{grid-template-columns:1fr}.jour{min-height:0}}
+</style>
+</head>
+<body data-genere="1795460321">
+<h1>Planning</h1>
+<div id="alerte" class="alerte" role="alert"></div>
+<ul class="legende"><li class="c-foyer">Foyer</li><li class="c-soin">Soin</li><li class="c-geo">Géobiologie</li><li class="c-absent">Absent</li><li class="c-occupe">Occupé</li></ul>
+<section><h2>Cette semaine</h2><div class="grille"><div class="jour aujourdhui" data-date="2026-11-23"><h3>Lundi 23 novembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-11-24"><h3>Mardi 24 novembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-11-25"><h3>Mercredi 25 novembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-occupe"><b>Occupé</b></div><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">6h30 - 11h30</span></div></div><div class="jour" data-date="2026-11-26"><h3>Jeudi 26 novembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-11-27"><h3>Vendredi 27 novembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-geo"><b>Géobiologie · Courrendlin</b><span class="h">9h - 14h</span></div></div><div class="jour" data-date="2026-11-28"><h3>Samedi 28 novembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-absent"><b>Absent</b></div></div><div class="jour" data-date="2026-11-29"><h3>Dimanche 29 novembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div></div></section>
+<section><h2>Semaine prochaine</h2><div class="grille"><div class="jour" data-date="2026-11-30"><h3>Lundi 30 novembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-12-01"><h3>Mardi 1 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">9h - 12h45</span></div></div><div class="jour" data-date="2026-12-02"><h3>Mercredi 2 décembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-12-03"><h3>Jeudi 3 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">16h - 22h</span></div></div><div class="jour" data-date="2026-12-04"><h3>Vendredi 4 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">6h30 - 11h30</span></div><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">16h - 21h30</span></div></div><div class="jour" data-date="2026-12-05"><h3>Samedi 5 décembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-12-06"><h3>Dimanche 6 décembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div></div></section>
+<section><h2>Dans deux semaines</h2><div class="grille"><div class="jour" data-date="2026-12-07"><h3>Lundi 7 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-soin"><b>Soin</b><span class="h">16h - 17h</span></div></div><div class="jour" data-date="2026-12-08"><h3>Mardi 8 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">6h30 - 11h30</span></div><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">16h - 19h</span></div></div><div class="jour" data-date="2026-12-09"><h3>Mercredi 9 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">8h30 - 10h</span></div></div><div class="jour" data-date="2026-12-10"><h3>Jeudi 10 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">6h30 - 8h30</span></div><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">16h - 21h30</span></div></div><div class="jour" data-date="2026-12-11"><h3>Vendredi 11 décembre<span class="auj">Aujourd'hui</span></h3><div class="rien">Rien de prévu</div></div><div class="jour" data-date="2026-12-12"><h3>Samedi 12 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">9h - 18h</span></div></div><div class="jour" data-date="2026-12-13"><h3>Dimanche 13 décembre<span class="auj">Aujourd'hui</span></h3><div class="ev c-foyer"><b>Foyer · Delémont</b><span class="h">9h - 18h</span></div></div></div></section>
+<p class="pied">Mis à jour le lundi 23 novembre à 19h58</p>
+<script>
+(function(){
+  var gen=Number(document.body.getAttribute('data-genere'))*1000;
+  try{
+    var auj=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Zurich'}).format(new Date());
+    document.querySelectorAll('.jour').forEach(function(j){
+      var d=j.getAttribute('data-date');
+      j.classList.toggle('aujourdhui',d===auj);
+      j.classList.toggle('passe',d<auj);
+    });
+  }catch(e){}
+  var h=(Date.now()-gen)/3600000;
+  if(h>6){
+    var t=h<48?('environ '+Math.floor(h)+' heures'):('environ '+Math.floor(h/24)+' jours');
+    var a=document.getElementById('alerte');
+    a.textContent="Le planning n'a pas été mis à jour depuis "+t+". Il se peut qu'il ne soit plus exact.";
+    a.style.display='block';
+  }
+})();
+</script>
+</body>
+</html>
